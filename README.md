@@ -51,7 +51,7 @@ Gratitude to the SKY130 PDK community, Contributors of VSDBabySoC repository and
 
 ---
 
-Previous week, Week 5 (NgSpice Analysis) : [Week 5 Repository](https://github.com/santhoshvec24/Week-5-VSD-RISC-V-Tapeout-Program)
+Previous week, Week 5 : [Week 5 Repository](https://github.com/santhoshvec24/Week-5-VSD-RISC-V-Tapeout-Program)
 
 ---
 
