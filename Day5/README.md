@@ -1,1 +1,1 @@
-# Final Step for RTL to GDS using tritonRoute OpenSTA
+# Final Step for RTL to GDS using tritonRoute and OpenSTA
