@@ -1,1 +1,1 @@
-# Good floorplan vs bad floorplan and introduction to library cells
+# Good floorplan vs Bad floorplan and Introduction to library cells
