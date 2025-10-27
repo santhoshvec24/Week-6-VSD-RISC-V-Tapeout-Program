@@ -5,13 +5,18 @@
 
 
 
+---
+
 ## Table of Contents
 
 1. [Objectives](#objectives)
 2. [Roadmap](#roadmap)
 3. [Prerequisites](#prerequisites)
 4. [Day-Wise Labs](#day-wise-labs)
-5. [Contributor](#contributor)
+5. [Acknowledgements](#acknowledgements)
+6. [Contributor](#contributor)
+
+---
 
 
 
@@ -19,9 +24,19 @@
 
 
 
+## Day-wise Folders:
 
+- [Day 1: MOSFET Behaviour](https://github.com/santhoshvec24/Week-4-VSD-RISC-V-Tapeout-Program/tree/main/Day1)
 
+- [Day 2: Threshold Voltage Extraction & Velocity Saturation](https://github.com/santhoshvec24/Week-4-VSD-RISC-V-Tapeout-Program/tree/main/Day2)
 
+- [Day 3: CMOS Inverter: Voltage Transfer Characteristic (VTC) & Transient Behavior](https://github.com/santhoshvec24/Week-4-VSD-RISC-V-Tapeout-Program/tree/main/Day3)
+
+- [Day 4: Noise Margin / Robustness Analysis](https://github.com/santhoshvec24/Week-4-VSD-RISC-V-Tapeout-Program/tree/main/Day4)
+
+- [Day 5: Power-Supply and Device Variation Studies](https://github.com/santhoshvec24/Week-4-VSD-RISC-V-Tapeout-Program/tree/main/Day5)
+
+---
 
 ## Acknowledgements
 
