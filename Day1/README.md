@@ -47,7 +47,9 @@ run_placement
 ```bash
 run_cts
 ```
-photo
+
+<img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/d50b6570-cf28-460c-a1de-64f0e4975946" />
+
 ```bash
 run_routing
 ```
