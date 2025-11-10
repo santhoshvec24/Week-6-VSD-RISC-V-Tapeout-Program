@@ -49,6 +49,12 @@ vsduser@santhosh:~/Desktop/work/tools/openlane_working_dir/openlane/designs/pico
 22-opensta_spef.min_max.rpt          2-opensta_wns.rpt
 ```
 
+```bash
+gedit 1-yosys_4.stat.rpt 
+```
+
+<img width="1831" height="964" alt="image" src="https://github.com/user-attachments/assets/2245d28f-7f50-4001-a576-8da4622f4eb0" />
+
 RC extraction is done
 
 <img width="1914" height="990" alt="image" src="https://github.com/user-attachments/assets/59659a16-7b2f-4bc6-9e5a-94f3e2960b03" />
