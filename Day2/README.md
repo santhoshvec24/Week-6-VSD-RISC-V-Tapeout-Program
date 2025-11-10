@@ -8,11 +8,16 @@ run_floorplan
 
 <img width="1919" height="949" alt="Screenshot 2025-10-31 153755" src="https://github.com/user-attachments/assets/109a1bba-6d33-4a88-bfad-8f43d67f69cd" />
 
+<img width="1439" height="993" alt="image" src="https://github.com/user-attachments/assets/dddd2b1f-81ea-46bf-936b-fbffdc024e31" />
+
+
 ```bash
 run_placement
 ```
 
 <img width="1916" height="964" alt="image" src="https://github.com/user-attachments/assets/cea94322-0fc2-44db-9016-3d7f62e8f770" />
+
+<img width="1108" height="914" alt="image" src="https://github.com/user-attachments/assets/5b75540e-0003-4466-892b-60dcd8ca7d92" />
 
 ```bash
 run_cts
