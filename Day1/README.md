@@ -34,6 +34,21 @@ run_synthesis
 
 <img width="1919" height="989" alt="image" src="https://github.com/user-attachments/assets/b2bb40d8-5c01-4987-8b0a-72cee099a960" />
 
+```
+vsduser@santhosh:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/10-11_13-33/reports/synthesis$ ls
+10-opensta_post_resizer.min_max.rpt  22-opensta_spef.rpt
+10-opensta_post_resizer.rpt          22-opensta_spef.slew.rpt
+10-opensta_post_resizer.slew.rpt     22-opensta_spef.timing.rpt
+10-opensta_post_resizer.timing.rpt   22-opensta_spef_tns.rpt
+10-opensta_post_resizer_tns.rpt      22-opensta_spef_wns.rpt
+10-opensta_post_resizer_wns.rpt      2-opensta.min_max.rpt
+1-yosys_4.chk.rpt                    2-opensta.rpt
+1-yosys_4.stat.rpt                   2-opensta.slew.rpt
+1-yosys_dff.stat                     2-opensta.timing.rpt
+1-yosys_pre.stat                     2-opensta_tns.rpt
+22-opensta_spef.min_max.rpt          2-opensta_wns.rpt
+```
+
 RC extraction is done
 
 <img width="1914" height="990" alt="image" src="https://github.com/user-attachments/assets/59659a16-7b2f-4bc6-9e5a-94f3e2960b03" />
