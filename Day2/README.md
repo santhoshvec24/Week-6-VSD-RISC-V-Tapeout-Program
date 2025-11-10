@@ -10,6 +10,8 @@ run_floorplan
 
 <img width="1439" height="993" alt="image" src="https://github.com/user-attachments/assets/dddd2b1f-81ea-46bf-936b-fbffdc024e31" />
 
+<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/c32a1795-533a-4e92-9d67-21c6d2e5876a" />
+
 
 ```bash
 run_placement
