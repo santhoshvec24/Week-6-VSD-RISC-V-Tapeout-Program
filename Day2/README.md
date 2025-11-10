@@ -21,11 +21,14 @@ run_placement
 
 <img width="1108" height="914" alt="image" src="https://github.com/user-attachments/assets/5b75540e-0003-4466-892b-60dcd8ca7d92" />
 
+
 ```bash
 run_cts
 ```
 
 <img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/d50b6570-cf28-460c-a1de-64f0e4975946" />
+
+<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/67c89605-299c-46cf-8086-10299bafea2a" />
 
 ```bash
 run_routing
