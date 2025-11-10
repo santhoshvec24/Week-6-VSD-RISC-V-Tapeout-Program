@@ -32,6 +32,9 @@ run_synthesis
 
 <img width="1918" height="985" alt="image" src="https://github.com/user-attachments/assets/95c12060-dfab-40c9-94a8-27b39bc5b9ba" />
 
+<img width="1919" height="989" alt="image" src="https://github.com/user-attachments/assets/b2bb40d8-5c01-4987-8b0a-72cee099a960" />
+
+RC extraction is done
 
 <img width="1914" height="990" alt="image" src="https://github.com/user-attachments/assets/59659a16-7b2f-4bc6-9e5a-94f3e2960b03" />
 
