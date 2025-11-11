@@ -29,6 +29,8 @@ magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/
 ```
 <img width="1834" height="981" alt="image" src="https://github.com/user-attachments/assets/87fd2437-6dc9-4d33-8622-1f179c2a87b0" />
 
+<img width="1838" height="997" alt="image" src="https://github.com/user-attachments/assets/80b1e487-ff7a-4d78-a193-37093a190161" />
+
 ```bash
 run_cts
 ```
