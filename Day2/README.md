@@ -62,7 +62,7 @@ run_floorplan
 ### Die Area Calculation  in microns
 From `picorv32a.floorplan.def` :
 
-```bash
+```def
 DESIGN picorv32a ;
 UNITS DISTANCE MICRONS 1000 ;
 DIEAREA ( 0 0 ) ( 660685 671405 ) ;
@@ -85,6 +85,9 @@ magic -T ~/soc-design-and-planning-nasscom-vsd/Desktop/work/tools/openlane_worki
 <img width="1452" height="994" alt="image" src="https://github.com/user-attachments/assets/bab69a30-2f04-4903-8c61-6bc6eead11da" />
 
 <img width="1829" height="978" alt="image" src="https://github.com/user-attachments/assets/b80a3a9f-ce1e-459c-bf94-55922df72ca4" />
+
+---
+
 
 ```bash
 run_placement
