@@ -49,12 +49,45 @@ Opening LEF File
 ```bash
 cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 ```
-Enter into `~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a`
+and also do the same for the following files or just copy and paste it in the src directory
+
+<img width="1196" height="621" alt="image" src="https://github.com/user-attachments/assets/96399b3b-fecb-4fb8-9047-a384bfcc799a" />
+
+Enter into `~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src`
 ```bash
 ls -ltr
 ```
 
 <img width="1622" height="991" alt="image" src="https://github.com/user-attachments/assets/5eee95ec-2e06-436d-86fe-9a94339ee2e8" />
+
+in picorv32a directory 
+```bash
+gedit config.tcl
+```
+edit it as given below
+```tcl
+# Design
+set ::env(DESIGN_NAME) "picorv32a"
+
+set ::env(VERILOG_FILES) "./designs/picorv32a/src/picorv32a.v"
+set ::env(SDC_FILE) "./designs/picorv32a/src/picorv32a.sdc"
+
+set ::env(CLOCK_PERIOD) "5.000"
+set ::env(CLOCK_PORT) "clk"
+
+set ::env(CLOCK_NET) $::env(CLOCK_PORT)
+
+set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+
+set filename $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/$::env(PDK)_$::env(STD_CELL_LIBRARY)_config.tcl
+if { [file exists $filename] == 1} {
+	source $filename
+}
+```
 
 
 
