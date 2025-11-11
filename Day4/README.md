@@ -35,6 +35,16 @@ lef write
 
 <img width="1520" height="996" alt="image" src="https://github.com/user-attachments/assets/980a9213-6c93-438e-ab6d-402478091393" />
 
+Viewing Generated LEF File
+Commands to Open LEF:
+
+```bash
+cd vsdstdcelldesign
+less sky130_vsdinv.lef
+```
+Opening LEF File
+
+<img width="1522" height="982" alt="image" src="https://github.com/user-attachments/assets/813e1af0-4ef9-47fa-815c-63bb47ba3f26" />
 
 
 
