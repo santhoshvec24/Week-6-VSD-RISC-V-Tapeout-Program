@@ -88,7 +88,19 @@ magic -T ~/soc-design-and-planning-nasscom-vsd/Desktop/work/tools/openlane_worki
 
 ---
 
+## What is Placement?
+Placement is the process of determining the exact physical location of each standard cell on the chip layout.
 
+This stage aims to minimize total wire length, satisfy timing constraints, and maintain balanced cell density across the core area.
+
+It consists of two main phases:
+
+- **Global Placement**: Performs an initial coarse positioning of cells.
+
+- **Detailed Placement**: Refines the placement and ensures legalization by removing any overlaps.
+
+### Placement in OpenLANE
+OpenLANE automates both placement phases, optimizing cell arrangement for better timing and routability.
 ```bash
 run_placement
 ```
@@ -105,6 +117,61 @@ magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/
 <img width="1834" height="981" alt="image" src="https://github.com/user-attachments/assets/87fd2437-6dc9-4d33-8622-1f179c2a87b0" />
 
 <img width="1838" height="997" alt="image" src="https://github.com/user-attachments/assets/80b1e487-ff7a-4d78-a193-37093a190161" />
+
+---
+
+## Standard Cell Design & Characterization Flow
+
+### a) Cell Design Flow
+
+Each standard cell (such as an inverter, NAND, etc.) follows a well-defined development sequence before being added to the standard cell library:
+
+1. **Specification & Logic Design**
+2. **Schematic Creation & Functional Simulation**
+3. **Layout Design (Physical Implementation)**
+4. **DRC and LVS Verification**
+5. **Electrical Characterization (Timing, Power, and Function)**
+6. **Library File Generation (.lib, .lef, .gds)**
+
+After successful verification, these cells become part of the standard cell library used in the **synthesis, placement, and routing** phases of chip design.
+
+---
+
+### b) Cell Characterization Flow
+
+Cell characterization defines the **electrical behavior** of each cell by extracting timing, power, and constraint data through **SPICE simulations**.
+
+#### Typical Steps:
+
+1. **Netlist Extraction**
+2. **Parameter Definition**
+3. **Model Selection**
+4. **SPICE Simulation and Data Measurement**
+5. **Model Generation (.lib)**
+6. **Verification and Validation**
+
+The resulting **.lib files** provide precise **delay and power information** essential for **Static Timing Analysis (STA)** and synthesis tools.
+
+---
+
+### Summary Table
+
+| Step | Task              | Tool / Command  | Output / Result                           |
+| ---- | ----------------- | --------------- | ----------------------------------------- |
+| 1    | Execute floorplan | `run_floorplan` | `picorv32a.floorplan.def`                 |
+| 2    | View floorplan    | Magic           | Floorplan visualization                   |
+| 3    | Execute placement | `run_placement` | `picorv32a.placement.def`                 |
+| 4    | View placement    | Magic           | Standard-cell placement layout            |
+| 5    | Review cell flow  | Conceptual      | Cell design and characterization overview |
+
+---
+
+### Next Step
+
+Proceed to **Day 3 — Custom Library Cell Design using Magic & ngspice**
+You’ll design a **CMOS inverter**, perform **DRC/LVS checks**, extract a **SPICE netlist**, and measure **delay and power characteristics**.
+
+---
 
 ```bash
 run_cts
