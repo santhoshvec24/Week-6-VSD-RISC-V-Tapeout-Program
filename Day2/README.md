@@ -39,8 +39,6 @@ run_cts
 
 <img width="1538" height="989" alt="image" src="https://github.com/user-attachments/assets/659d361e-3c08-4813-860c-3b341aac8bf3" />
 
-<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/67c89605-299c-46cf-8086-10299bafea2a" />
-
 ```bash
 
 ```
