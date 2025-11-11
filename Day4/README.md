@@ -49,7 +49,7 @@ Opening LEF File
 ```bash
 cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 ```
-Enter into ``
+Enter into `~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a`
 ```bash
 ls -ltr
 ```
