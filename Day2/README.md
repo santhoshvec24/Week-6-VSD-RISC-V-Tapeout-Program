@@ -1,7 +1,56 @@
 # Good floorplan vs Bad floorplan and Introduction to library cells
 
+Day 2 Summary — Floorplan, Libraries & Placement
 
+---
 
+### 1. Utilization & Aspect Ratio:
+Defines how much of the core is used by standard cells (60–75% ideal) and the width–height ratio of the core. Both affect congestion, timing, and routing efficiency.
+
+### 2. Pre-Placed Cells:
+Large macros, memories, and I/O blocks are fixed early to reserve routing channels and guide standard-cell placement.
+
+### 3. Decoupling Capacitors:
+Provide instant current during switching to reduce voltage noise, IR drop, and ground bounce—key for power integrity.
+
+### 4. Power Planning:
+Designing the power grid (rails, straps, vias) ensures stable supply and reliability; improper planning causes timing and IR-drop issues.
+
+### 5. Pin Placement & Blockages:
+Proper pin locations reduce routing length; placement blockages prevent cells from being placed in reserved or congested zones.
+
+### 6. Floorplan Flow in OpenLANE:
+Set core size, utilization, aspect ratio, and macro positions; generate DEF and inspect floorplan for correctness.
+
+### 7. Floorplan Files & Viewing:
+DEF/LEF and TCL scripts describe floorplans; inspect them using Magic, KLayout, or OpenROAD to verify placements and blockages.
+
+### 8. Magic Floorplan Review:
+Use Magic to visualize the physical layout with the Sky130 PDK and verify DRC compliance.
+
+### 9. Library Binding & Placement Optimization:
+Logical cells are mapped to physical library cells; placement is optimized to reduce wirelength and meet timing constraints.
+
+### 10. Final Placement Optimization:
+Refine placement using timing-driven methods and rebuffering to improve timing and routability.
+
+### 11. Libraries & Characterization:
+Standard-cell libraries (.lib, .lef) define cell area, timing, and power; characterized from SPICE simulations at multiple PVT corners.
+
+### 12. Congestion-Aware Placement (RePlAce):
+Global placer that balances cell density and connectivity to improve routability.
+
+### 13. Cell Design & Characterization Flow:
+Starts with schematic and layout design, followed by parasitic extraction, SPICE timing analysis, and Liberty file generation.
+
+### 14. Timing Basics:
+Defines setup, hold, propagation delay, and transition time — essential for timing analysis and ensuring correct flip-flop operation.
+
+---
+## Running Floorplan in OpenLANE
+Once synthesis is complete, floorplanning can be executed using OpenLANE’s interactive shell:
+
+As usual, start by opening the Docker container from the OpenLANE directory, then continue the flow beginning from the synthesis stage of the Day 1 task.
 ```bash
 run_floorplan
 ```
