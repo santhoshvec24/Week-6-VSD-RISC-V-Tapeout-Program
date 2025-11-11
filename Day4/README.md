@@ -89,9 +89,26 @@ if { [file exists $filename] == 1} {
 }
 ```
 
+as we know that just overwrite the run folder which contains all the process and files by using the commands in day 1
+```
+docker
+...
+prep -design picorv32a -tag 10-11_13-33 -overwrite
+```
+### Adding Custom LEF to Merged LEF
+Additional Commands:
+```bash
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+```
 
+### Running Synthesis with Custom Cell
+Synthesis Command:
+```bash
+run_synthesis
+```
 
-
+<img width="1836" height="991" alt="image" src="https://github.com/user-attachments/assets/a131595b-0398-4675-b8a1-97cadc3b485f" />
 
 
 
