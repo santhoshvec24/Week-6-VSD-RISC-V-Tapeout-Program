@@ -46,7 +46,15 @@ Opening LEF File
 
 <img width="1522" height="982" alt="image" src="https://github.com/user-attachments/assets/813e1af0-4ef9-47fa-815c-63bb47ba3f26" />
 
+```bash
+cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+```
+Enter into ``
+```bash
+ls -ltr
+```
 
+<img width="1622" height="991" alt="image" src="https://github.com/user-attachments/assets/5eee95ec-2e06-436d-86fe-9a94339ee2e8" />
 
 
 
