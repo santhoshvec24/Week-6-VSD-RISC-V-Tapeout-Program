@@ -10,7 +10,9 @@ run_floorplan
 
 <img width="1439" height="993" alt="image" src="https://github.com/user-attachments/assets/dddd2b1f-81ea-46bf-936b-fbffdc024e31" />
 
-<img width="1330" height="778" alt="image" src="https://github.com/user-attachments/assets/b8ff344f-46d6-4751-8dc2-22baffa2c3b3" />
+```bash
+magic -T ~/soc-design-and-planning-nasscom-vsd/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
 
 
 ```bash
