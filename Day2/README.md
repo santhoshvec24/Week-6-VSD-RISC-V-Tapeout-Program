@@ -41,8 +41,12 @@ run_cts
 
 <img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/67c89605-299c-46cf-8086-10299bafea2a" />
 
+```bash
 
-<img width="1822" height="992" alt="image" src="https://github.com/user-attachments/assets/643423ba-e454-47bf-bc18-06b9e6cc85fe" />
+```
+<img width="997" height="913" alt="image" src="https://github.com/user-attachments/assets/34d599ea-b96a-4ea8-93f0-9674e7aab9d4" />
+
+<img width="1833" height="997" alt="image" src="https://github.com/user-attachments/assets/f1dc0d50-6bfa-47f5-ad31-0326a2542ed1" />
 
 ```bash
 run_routing
