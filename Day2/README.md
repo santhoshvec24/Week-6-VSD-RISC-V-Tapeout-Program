@@ -25,7 +25,7 @@ run_placement
 <img width="1108" height="914" alt="image" src="https://github.com/user-attachments/assets/5b75540e-0003-4466-892b-60dcd8ca7d92" />
 
 ```bash
-
+magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
 <img width="1834" height="981" alt="image" src="https://github.com/user-attachments/assets/87fd2437-6dc9-4d33-8622-1f179c2a87b0" />
 
