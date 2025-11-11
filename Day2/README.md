@@ -42,7 +42,7 @@ run_cts
 <img width="1538" height="989" alt="image" src="https://github.com/user-attachments/assets/659d361e-3c08-4813-860c-3b341aac8bf3" />
 
 ```bash
-
+magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.cts.def
 ```
 <img width="997" height="913" alt="image" src="https://github.com/user-attachments/assets/34d599ea-b96a-4ea8-93f0-9674e7aab9d4" />
 
