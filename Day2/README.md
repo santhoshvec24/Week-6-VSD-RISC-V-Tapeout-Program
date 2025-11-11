@@ -59,6 +59,23 @@ run_floorplan
 
 <img width="1439" height="993" alt="image" src="https://github.com/user-attachments/assets/dddd2b1f-81ea-46bf-936b-fbffdc024e31" />
 
+### Die Area Calculation  in microns
+From `picorv32a.floorplan.def` :
+
+```bash
+DESIGN picorv32a ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 660685 671405 ) ;
+```
+
+Die Width = 660685 / 1000 = 660.685 μm
+
+Die Height = 671405 / 1000 = 671.405 μm
+
+Area = 660.685 × 671.405 = 443,587.21 μm²
+
+---
+
 Then enter into the directory `~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/10-11_15-34/results/floorplan`
 
 ```bash
