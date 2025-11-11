@@ -14,6 +14,7 @@ run_floorplan
 magic -T ~/soc-design-and-planning-nasscom-vsd/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
 
+<img width="1824" height="958" alt="image" src="https://github.com/user-attachments/assets/226131ec-a334-4ad4-910c-89669f3f8aa7" />
 
 ```bash
 run_placement
