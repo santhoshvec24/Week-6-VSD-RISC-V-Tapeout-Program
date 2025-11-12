@@ -163,6 +163,25 @@ run_synthesis
 
 <img width="1836" height="991" alt="image" src="https://github.com/user-attachments/assets/a131595b-0398-4675-b8a1-97cadc3b485f" />
 
+and all the same process, then
+
+```bash
+run_cts
+```
+
+<img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/d50b6570-cf28-460c-a1de-64f0e4975946" />
+
+<img width="1538" height="989" alt="image" src="https://github.com/user-attachments/assets/659d361e-3c08-4813-860c-3b341aac8bf3" />
+
+Then enter into the directory `~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/10-11_15-34/results/cts`
+
+```bash
+magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.cts.def
+```
+<img width="997" height="913" alt="image" src="https://github.com/user-attachments/assets/34d599ea-b96a-4ea8-93f0-9674e7aab9d4" />
+
+<img width="1833" height="997" alt="image" src="https://github.com/user-attachments/assets/f1dc0d50-6bfa-47f5-ad31-0326a2542ed1" />
+
 ---
 
 ### Summary Table
