@@ -1,10 +1,5 @@
 # Week-6-VSD-RISC-V-Tapeout-Program
 
-`26/10/2025` to `01/11/2025`
-
-
-
-
 ---
 
 ## Table of Contents
