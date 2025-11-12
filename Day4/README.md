@@ -1,5 +1,58 @@
 # Pre-layout Timing Analysis and Importance of Good Clock Tree
 
+## Layout & Library Preparation
+- **Grid-to-Track Conversion:** Maps layout geometry to routing tracks so routers follow correct metal layers and spacing. Output: `tracks.lef`.
+- **Magic Layout → Std Cell LEF:** Exports cell boundary, pins, and sites to LEF so placer/router can position cells accurately.
+- **Timing Libraries (.lib):** Contain timing arcs and power data. Add new cells by updating `.lib`, `.lef`, and gate-level models in synthesis/STA setup.
+
+---
+
+## Delay Tables & STA Concepts
+- **Delay Tables:** 2D lookup of delay vs. input slew and output load. Used by STA/synthesis for timing estimation.
+- **Usage 1:** STA interpolates values to compute path delay and slack (positive/negative).
+- **Usage 2:** Multiple `.lib` files model PVT corners; parasitics combine with delay data for final timing accuracy.
+
+---
+
+## Synthesis Optimization
+- Adjust effort level, frequency targets, and include custom cells (e.g., `vsdinv`) to improve slack.
+- Techniques: retiming, pipeline insertion, `set_max_area` tuning, or logic rebalancing.
+
+---
+
+## Static Timing Analysis (STA)
+- **Setup Analysis:** Checks data arrival before flip-flop setup window.  
+  *OpenSTA commands:* `read_liberty`, `read_verilog`, `create_clock`, `report_timing`.
+- **Clock Jitter & Uncertainty:** Models variation and skew using `set_clock_uncertainty`.
+- **Post-Synthesis STA:** Run timing with netlist + `.lib` (+ `SPEF` if available) to verify design before placement.
+
+---
+
+## Timing Closure & ECO
+- Reduce violations by resynthesis, logic optimization, faster cells, or pipelines.
+- **ECO (Engineering Change Order):** Quick post-synthesis fixes—add buffers, modify constraints, or swap cells.
+
+---
+
+## Clock Tree Synthesis (CTS)
+- **TritonCTS:** Builds buffered H-tree or mesh for balanced clock distribution. Configure root, buffer types, and regions.
+- **Signal Integrity:** Use shielding and spacing to reduce crosstalk, jitter, and skew on clock nets.
+- **CTS Verification:** Check skew, latency, and setup/hold margins via `report_clock -skew` and `report_timing`.
+
+---
+
+## Real-Clock Timing Analysis
+- **Setup (Post-CTS):** Uses actual clock insertion delays for accurate slack computation.
+- **Hold Analysis:** Ensures data stability after capture; fix with delay buffers or clock skew adjustments.
+- **OpenSTA Flow:** Load post-CTS netlist + corner `.lib` + `SPEF`; run `report_timing -setup/-hold`.
+
+---
+
+## Buffer Size Impact Study
+- Larger CTS buffers ↓ skew but ↑ latency/power.  
+- Explore trade-offs by sweeping buffer sizes and analyzing resulting setup/hold slacks.
+
+---
 
 In console area, type the following
 ```
@@ -110,8 +163,18 @@ run_synthesis
 
 <img width="1836" height="991" alt="image" src="https://github.com/user-attachments/assets/a131595b-0398-4675-b8a1-97cadc3b485f" />
 
+---
 
+### Summary Table
+| Phase | Key Task | Tool | Output |
+|--------|-----------|------|--------|
+| Layout prep | Grid→track, LEF export | Magic | `tracks.lef`, `stdcell.lef` |
+| Lib setup | Add timing data | Yosys / STA | `.lib` integration |
+| STA | Analyze setup/hold | OpenSTA | Timing reports |
+| CTS | Build & verify tree | TritonCTS | DEF with buffers |
+| Optimization | Fix violations | Synthesis / ECO | Improved slack |
 
+---
 
 
 
