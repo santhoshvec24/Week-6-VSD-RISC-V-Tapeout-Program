@@ -1,7 +1,5 @@
 # Design library cell using Magic Layout and ngspice characterization
 
-## Summary — Layout, ngspice Characterization & CMOS Inverter Labs
-
 Focuses on understanding the complete inverter design flow — from circuit simulation to layout fabrication, verification, and characterization using the Sky130 PDK.
 
 ---
