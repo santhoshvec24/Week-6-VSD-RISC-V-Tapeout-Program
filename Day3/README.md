@@ -29,7 +29,7 @@ Focuses on understanding the complete inverter design flow — from circuit simu
 ---
 
 ### 4. Switching Threshold (Vm)
-	​
+​
 - Vm is the point where input equals output (Vout = Vin).
 
 - Determines inverter balance and noise margins; ideally ≈ VDD/2.
